@@ -1,0 +1,3 @@
+genanki
+markdown
+pygments

@@ -1,0 +1,15 @@
+{
+    "title":"Example.apkg",
+    "model_id": 1607392319,
+    "deck_id": 2059400110,
+    "cards": [
+        {
+            "question": "Как вывести \"Hello, World!\" на Python?",
+            "answer": "```python\nprint(\"Hello, World!\")\n```"
+        },
+        {
+            "question": "Как создать функцию в JavaScript?",
+            "answer": "```javascript\nfunction greet() {\n  console.log(\"Hello, World!\");\n}\n```"
+        }
+    ]
+}
