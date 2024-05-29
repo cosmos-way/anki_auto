@@ -74,3 +74,10 @@ import uuid
 model_id = uuid.uuid4().int
 deck_id = uuid.uuid4().int
 ```
+
+## Docker
+
+```sh
+docker build -t anki-notion-auto .
+docker run -d --name anki-notion-auto --env-file .env anki-notion-auto
+```

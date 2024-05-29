@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+</head>
+<body>
+    <h2>Welcome! You are logged in.</h2>
+    <button id="fetchDataButton">Fetch Data from Notion</button>
+    <div id="data"></div>
+
+    <script>
+        document.getElementById('fetchDataButton').onclick = function() {
+            fetch('/fetch_data', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('data').innerHTML = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error:', error));
+        };
+    </script>
+</body>
+</html>

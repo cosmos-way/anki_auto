@@ -1,3 +1,11 @@
 genanki
 markdown
 pygments
+flask
+sqlalchemy
+flask_sqlalchemy
+requests==2.25.1
+python-dotenv==0.19.2
+notion-client
+flask-jwt-extended
+requests-oauthlib
