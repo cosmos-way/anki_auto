@@ -18,7 +18,7 @@ ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 # Объявите порт, который будет слушать сервер
-EXPOSE 5000
+EXPOSE 8080
 
 # Команда для запуска приложения
 CMD ["python", "-m", "app", "run"]

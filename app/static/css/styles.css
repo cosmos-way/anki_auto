@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(135deg, #F9D342, #FF8C00, #FF3D68, #A044FF, #2A95FF);
+    background-size: 150% 150%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #000;
+}
+pre code {
+    display: block;
+    padding: 1em;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}

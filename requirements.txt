@@ -9,3 +9,5 @@ python-dotenv==0.19.2
 notion-client
 flask-jwt-extended
 requests-oauthlib
+flask-cors
+markdown2
