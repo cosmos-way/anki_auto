@@ -11,3 +11,6 @@ flask-jwt-extended
 requests-oauthlib
 flask-cors
 markdown2
+beautifulsoup4
+flask-socketio
+apscheduler

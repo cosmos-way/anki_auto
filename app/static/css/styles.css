@@ -19,9 +19,45 @@ body {
     font-size: 20px;
     color: #000;
 }
+
+#loading {
+    display: none;
+    width: 100px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    background-color: #f3f3f3;
+    margin-top: 20px;
+}
+
+.bar {
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+}  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 pre code {
     display: block;
     padding: 1em;
     background: #f5f5f5;
     border: 1px solid #ccc;
+}
+
+body, html {
+    height: 100%;
+}
+.bg {
+    background-image: url('https://via.placeholder.com/1500x800'); /* Замените URL на ваш фоновый изображение */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    background: rgba(255, 255, 255, 0.8);
 }

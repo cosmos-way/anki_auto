@@ -27,9 +27,11 @@ def create_app():
         from .main import main as main_blueprint
         from .notion.auth import auth as notion_auth_blueprint
         from .notion import notion as notion_blueprint
+        from .anki import anki as anki_blueprint
 
         app.register_blueprint(main_blueprint)
         app.register_blueprint(notion_auth_blueprint, url_prefix='/notion/auth')
         app.register_blueprint(notion_blueprint, url_prefix='/notion')
+        app.register_blueprint(anki_blueprint, url_prefix='/anki')
 
         return app

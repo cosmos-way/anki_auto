@@ -3,12 +3,15 @@
 {% block content %}
     <h2>Welcome! You are logged in.</h2>
     <div class="btn-group mb-3" role="group" aria-label="Basic example">
-        <button id="fetchDataButton" class="btn btn-primary">Fetch Data from Notion</button>
+        <button id="getAnkiButton" class="btn btn-primary">Anki</button>
         <button id="fetchRowsButton" class="btn btn-secondary">Fetch Rows from Database</button>
         <button id="fetchPageButton" class="btn btn-success">Fetch Page from Database</button>
+        <br/>
         <button id="fetchBlockChildrenButton" class="btn btn-info">Fetch Block Children</button>
         <button id="fetchBlockButton" class="btn btn-warning">Fetch Block</button>
         <button id="convertPageButton" class="btn btn-dark">Convert Page to Markdown</button>
+        <br/>
+        <button id="fetch_all_database_pages" class="btn btn-dark">fetch_all_database_pages</button>
     </div>
     <div id="loader" class="d-none">Loading...</div>
     <div id="data" class="mb-3"></div>

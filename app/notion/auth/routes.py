@@ -71,7 +71,7 @@ def set_token(access_token, user_id):
     existing_token = models.Token.query.filter_by(user_id=user_id).first()
     if existing_token:
         existing_token.token = access_token
-        existing_token.created_at = datetime.utcnow()
+        # existing_token.created_at = datetime.utcnow()
     else:
         new_token = models.Token(token=access_token, user_id=user_id)
         db.session.add(new_token)
